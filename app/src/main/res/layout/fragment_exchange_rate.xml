@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="inputExchangeTestData"
-            type="com.bcp.challengebcp.presentation.exchange.rate.ExchangeRateViewModel" />
+            type="com.bcp.challengebcp.presentation.exchange.ExchangeRateViewModel" />
+
+        <variable
+            name="executeClick"
+            type="com.bcp.challengebcp.components.inputExchange.InputExchangeClick" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,15 +27,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/txt_test"
+        <include
+            android:id="@+id/lyt_component_exchange_rate"
+            layout="@layout/component_exchange_rate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{inputExchangeTestData.testBindingLiveData.amountMoneyChange}"
+            app:exchangeClick="@{executeClick}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-         />
+            app:textMoneyBottom="@{inputExchangeTestData.inputExchangeRateLiveData.amountMoneyChange}"
+            app:textMoneyTop="@{inputExchangeTestData.inputExchangeRateLiveData.amountMoneyEnter}"
+            app:textTypeMoneyBottom="@{inputExchangeTestData.inputExchangeRateLiveData.typeMoneyChange}"
+            app:textTypeMoneyTop="@{inputExchangeTestData.inputExchangeRateLiveData.typeMoneyEnter}" />
+
+        <TextView
+            android:id="@+id/txt_component_exchange_text_sell_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/exchange_rate_sell_buy_text"
+            app:layout_constraintBottom_toTopOf="@+id/lyt_component_exchange_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

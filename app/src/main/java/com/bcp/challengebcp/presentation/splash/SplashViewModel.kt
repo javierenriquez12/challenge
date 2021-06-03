@@ -11,7 +11,7 @@ class SplashViewModel : ViewModel() {
 
     val actionNextScreenUI = MutableLiveData<SplashResult>()
 
-    fun loadSplash(){
+    fun loadSplash() {
         viewModelScope.launch {
             delay(Constants.TIME_SPLASH)
             actionNextScreenUI.value = SplashResult.ActionNextScreenUI

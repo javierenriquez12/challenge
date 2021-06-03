@@ -1,6 +1,10 @@
 {
-   "amountMoneyEnter":"bezkoder",
-   "typeMoneyEnter":"26",
-   "amountMoneyChange":"test",
-   "typeMoneyChange":"prueba"
+  "idTypeMoneyEnter": "1",
+  "idTypeMoneyChange": "8",
+  "amountMoneyEnter": "100",
+  "typeMoneyEnter": "soles",
+  "amountMoneyChange": "325",
+  "typeMoneyChange": "dólares",
+  "buyMoney": "3.25",
+  "sellMoney": "3.29"
 }

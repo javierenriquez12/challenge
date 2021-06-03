@@ -8,5 +8,14 @@
         android:id="@+id/exchangeRateActivity2"
         android:name="com.bcp.challengebcp.presentation.exchange.rate.ExchangeRateFragment"
         android:label="fragment_exchange_rate"
-        tools:layout="@layout/fragment_exchange_rate" />
+        tools:layout="@layout/fragment_exchange_rate">
+        <action
+            android:id="@+id/action_exchangeRateActivity2_to_typeMoneyList"
+            app:destination="@id/typeMoneyList" />
+    </fragment>
+    <fragment
+        android:id="@+id/typeMoneyList"
+        android:name="com.bcp.challengebcp.presentation.exchange.rate.typemoneylist.TypeMoneyListFragment"
+        android:label="fragment_type_money_list"
+        tools:layout="@layout/fragment_type_money_list" />
 </navigation>

@@ -1,0 +1,58 @@
+{
+  "typesMoney": [
+    {
+      "idTypeMoneyEnter": "2",
+      "name": "Brasil",
+      "value": "1 REAL = 1 SOL",
+      "imageFlag": "https://firebasestorage.googleapis.com/v0/b/pruebabanca.appspot.com/o/brasil.png?alt=media&token=7ad1ada4-6bbf-4111-85b3-f14243ed2cd4",
+      "buyMoney": "2.25",
+      "sellMoney": "2.81",
+      "typeMoney": "REAL"
+    },
+    {
+      "idTypeMoneyEnter": "3",
+      "name": "Argentina",
+      "value": "1 PESO= 2 SOL",
+      "imageFlag": "https://firebasestorage.googleapis.com/v0/b/pruebabanca.appspot.com/o/argentina.png?alt=media&token=1d7773c0-6ccc-45e5-b14d-e445c1dca80f",
+      "buyMoney": "1.53",
+      "sellMoney": "1.91",
+      "typeMoney": "PESO(ARG)"
+    },
+    {
+      "idTypeMoneyEnter": "4",
+      "name": "Colombia",
+      "value": "1 PESO = 3 SOL",
+      "imageFlag": "https://firebasestorage.googleapis.com/v0/b/pruebabanca.appspot.com/o/colombia.png?alt=media&token=b640fe9c-7bd4-44c1-93cd-bed9bb8dc3c4",
+      "buyMoney": "3.91",
+      "sellMoney": "4.01",
+      "typeMoney": "PESO(COL)"
+    },
+    {
+      "idTypeMoneyEnter": "5",
+      "name": "Chile",
+      "value": "1 PESO = 2 SOL",
+      "imageFlag": "https://firebasestorage.googleapis.com/v0/b/pruebabanca.appspot.com/o/chile.png?alt=media&token=9f65e21f-4772-4a50-ac42-9858ee6c983a",
+      "buyMoney": "2.10",
+      "sellMoney": "2.59",
+      "typeMoney": "PESO(CHI)"
+    },
+    {
+      "idTypeMoneyEnter": "6",
+      "name": "Bolivia",
+      "value": "1 BOLIVAR = 1 SOL",
+      "imageFlag": "https://firebasestorage.googleapis.com/v0/b/pruebabanca.appspot.com/o/bolivia.png?alt=media&token=789b8818-9138-44d4-a740-39393d540a4e",
+      "buyMoney": "2.1",
+      "sellMoney": "2.9",
+      "typeMoney": "BOLIVAR"
+    },
+    {
+      "idTypeMoneyEnter": "7",
+      "name": "Panamá",
+      "value": "1 Balvoa = 2 SOL",
+      "imageFlag": "https://firebasestorage.googleapis.com/v0/b/pruebabanca.appspot.com/o/panama.png?alt=media&token=3c31769e-4527-4732-8b3f-045b9f394863",
+      "buyMoney": "2.3",
+      "sellMoney": "2.9",
+      "typeMoney": "Balvoa"
+    }
+  ]
+}
